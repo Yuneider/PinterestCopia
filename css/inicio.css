@@ -1,0 +1,13 @@
+/* Fuente: Segoe UI */
+
+header{
+    display: flex;
+
+    height: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    align-items: center;
+
+    background-color: grey;
+}
