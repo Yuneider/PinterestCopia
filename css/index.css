@@ -1,0 +1,82 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
+  height: 70px;
+
+  align-items: center;
+}
+
+header div {
+  text-align: center;
+}
+
+.logo {
+  margin-left: 20px;
+  display: flex;
+}
+
+.logo h3 {
+  margin-left: 6px;
+  font-weight: 700;
+  color: #e60023;
+  font-size: 1.3em;
+}
+
+header div a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+header div a:hover {
+  text-decoration: underline;
+}
+
+.ini-sesion {
+  text-align: center;
+  background-color: #e60023;
+  border-radius: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.ini-sesion:hover {
+  background-color: #ad081b;
+}
+
+.ini-sesion a:hover {
+  text-decoration: none;
+}
+
+.ini-sesion a {
+  color: white;
+}
+
+.logo-parte-uno {
+  display: flex;
+  align-items: center;
+}
+
+.registro {
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 24px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-right: 5px;
+  width: 100px;
+}
+
+.registro:hover {
+  background-color: #e2e2e2;
+}
+
+.registro a:hover {
+  text-decoration: none;
+}
