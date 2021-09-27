@@ -126,6 +126,26 @@ header{
     background-color: transparent;
 }
 
+.content{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, 230px);
+
+    gap: 20px;
+
+    justify-content: center;
+
+    grid-template-rows: masonry;
+
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.prueba{
+    width: 230px;
+}
+
 
 /* HOVERS */
 
