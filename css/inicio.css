@@ -1,6 +1,6 @@
 /* GENERALES */
 
-body{
+body, input, button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -27,17 +27,41 @@ body{
     cursor: pointer;
 }
  
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+
+    width: 100%;
+    height: 99%;
+
+    border-radius: 15px;
+
+    opacity: 0;
+}
+
 /* ESPECIFICOS */
 
 header{
     display: grid;
 
+    position: fixed;
+
+    top: 0;
+
     grid-template-columns: 180px 1fr 180px;
 
+    width: 100%;
     height: 70px;
 
     align-items: center;
     justify-items: center;
+
+    z-index: 2;
+
+    background-color: #fff;
 }
 
 .logo{
@@ -102,7 +126,7 @@ header{
 
     font-size: 15px;
 
-    background-color: #EFEFEF;
+    background-color: transparent;
 }
 
 .perfil img{
@@ -129,26 +153,134 @@ header{
 .content{
     display: grid;
 
-    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(auto-fill, 236px);
+    grid-template-rows: masonry;
+    gap: 40px 20px;
 
-    gap: 20px;
+    margin-top: 70px;
 
     justify-content: center;
-
-    grid-template-rows: masonry;
-
-    width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
-.prueba{
-    width: 230px;
+.imagen{
+    width: 236px;
+    border-radius: 15px;
+}
+
+.tarjeta{
+    font-size: 13px;
+    cursor: zoom-in;
+}
+
+.image{
+    display: flex;
+    cursor: pointer;
+}
+
+.image img{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.tarjeta p{
+    margin-left: 7px;
+}
+
+.guardar{
+    width: 90px;
+
+
+    background-color: red;
+}
+
+.subTarjeta{
+    display: grid;
+
+    grid-template-columns: 1fr 90px;
+
+    margin: 5%;
+
+    align-items: center;
+}
+
+.subTarjeta p{
+    font-weight: 1000;
+
+    color: #fff;
+}
+
+.subTarjeta svg{
+    width: 12px;
+
+    margin-left: 17px;
+
+    filter: invert();
+}
+
+.superior{
+    display: flex;
+    align-items: center;
+}
+
+.superior svg{
+    cursor: pointer;
+}
+
+.ayuda{
+    position: fixed;
+
+    top: 85%;
+    left: 95%;
+
+    z-index: 2;
+}
+
+.ayuda svg{
+    width: 20px;
+    height: 20px;
+
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.mas, .pregunta{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    box-shadow:  7px 7px 53px #ccc,
+                -7px -7px 53px #ffffff;
+
+    background-color: #fff;
+}
+
+.pregunta{
+    margin-top: 10px;
 }
 
 
 /* HOVERS */
 
-.busqueda:hover, input:hover, .logo:hover, .divHoy:hover, .menuLateral:hover{
+.busqueda:hover, input:hover, .logo:hover, .divHoy:hover, .menuLateral:hover, .mas:hover ,.pregunta:hover{
     background-color: #e2e2e2;
+}
+
+.absolute:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.guardar:hover{
+    background-color: #AD081B;
+}
+
+
+/* FOCUS */
+
+input:focus{
+    outline: none;
 }
