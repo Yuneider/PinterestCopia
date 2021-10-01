@@ -1,286 +1,294 @@
 /* GENERALES */
 
-body, input, button{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body,
+input,
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.centrar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sinBorde{
-    border: none;
+.sinBorde {
+  border: none;
 }
 
-.margen_10px{
-    margin-left: 10px;
-    margin-right: 10px;
+.margen_10px {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.colorGrey{
-    fill: #767676;
+.colorGrey {
+  fill: #767676;
 }
 
-.clickable{
-    cursor: pointer;
-}
- 
-.relative{
-    position: relative;
+.clickable {
+  cursor: pointer;
 }
 
-.absolute{
-    position: absolute;
+.relative {
+  position: relative;
+}
 
-    width: 100%;
-    height: 99%;
+.absolute {
+  position: absolute;
 
-    border-radius: 15px;
+  width: 100%;
+  height: 99%;
 
-    opacity: 0;
+  border-radius: 15px;
+
+  opacity: 0;
 }
 
 /* ESPECIFICOS */
 
-header{
-    display: grid;
+header {
+  display: grid;
 
-    position: fixed;
+  position: fixed;
 
-    top: 0;
+  top: 0;
 
-    grid-template-columns: 180px 1fr 180px;
+  grid-template-columns: 180px 1fr 180px;
 
-    width: 100%;
-    height: 70px;
+  width: 100%;
+  height: 70px;
 
-    align-items: center;
-    justify-items: center;
+  align-items: center;
+  justify-items: center;
 
-    z-index: 2;
+  z-index: 2;
 
-    background-color: #fff;
+  background-color: #fff;
 }
 
-.logo{
-    width: 45px;
-    height: 45px;
+.logo {
+  width: 45px;
+  height: 45px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.divHoy{
-    width: 60px;
-    height: 45px;
+.divHoy {
+  width: 60px;
+  height: 45px;
 
-    border-radius: 50px;
+  border-radius: 50px;
 
-    margin-right: 10px;
+  margin-right: 10px;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.inicio{
-    width: 70px;
-    height: 50px;
+.inicio {
+  width: 70px;
+  height: 50px;
 
-    font-weight: 800;
-    font-size: 15px;
-    color: #fff;
-    background-color: #000;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
 
-    border-radius: 40px;
+  border-radius: 40px;
 }
 
-.hoy{
-    font-weight: 600;
-    font-size: 15px;
-    background-color: transparent;
+.hoy {
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
 }
 
-.busqueda{
-    display: flex;
+.busqueda {
+  display: flex;
 
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 
-    border-radius: 50px;
+  border-radius: 50px;
 
-    align-items: center;
+  align-items: center;
 
-    background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
-.busqueda svg{
-    margin-left: 15px;
-    margin-right: 3px;
+.busqueda svg {
+  margin-left: 15px;
+  margin-right: 3px;
 }
 
-.busqueda input{
-    width: 90%;
-    height: 90%;
+.busqueda input {
+  width: 90%;
+  height: 90%;
 
-    font-size: 15px;
+  font-size: 15px;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.perfil img{
-    height: 25px;
-    width: 25px;
+.perfil img {
+  height: 25px;
+  width: 25px;
 
-    background-repeat: no-repeat;
-    background-position: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background-size: 100% auto;
+  background-size: 100% auto;
 }
 
-.menuLateral{
-    width: 30px;
-    height: 30px;
+.menuLateral {
+  width: 30px;
+  height: 30px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.content{
-    display: grid;
+.content {
+  display: grid;
 
-    grid-template-columns: repeat(auto-fill, 236px);
-    grid-template-rows: masonry;
-    gap: 40px 20px;
+  grid-template-columns: repeat(auto-fill, 236px);
+  grid-template-rows: masonry;
+  gap: 40px 20px;
 
-    margin-top: 70px;
+  margin-top: 70px;
 
-    justify-content: center;
+  justify-content: center;
 }
 
-.imagen{
-    width: 236px;
-    border-radius: 15px;
+.imagen {
+  width: 236px;
+  border-radius: 15px;
 }
 
-.tarjeta{
-    font-size: 13px;
-    cursor: zoom-in;
+.tarjeta {
+  font-size: 13px;
+  cursor: zoom-in;
 }
 
-.image{
-    display: flex;
-    cursor: pointer;
+.image {
+  display: flex;
+  cursor: pointer;
 }
 
-.image img{
-    margin-top: 5px;
-    width: 30px;
-    height: 30px;
+.image img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
 }
 
-.tarjeta p{
-    margin-left: 7px;
+.tarjeta p {
+  margin-left: 7px;
 }
 
-.guardar{
-    width: 90px;
+.guardar {
+  width: 90px;
 
-
-    background-color: red;
+  background-color: red;
 }
 
-.subTarjeta{
-    display: grid;
+.subTarjeta {
+  display: grid;
 
-    grid-template-columns: 1fr 90px;
+  grid-template-columns: 1fr 90px;
 
-    margin: 5%;
+  margin: 5%;
 
-    align-items: center;
+  align-items: center;
 }
 
-.subTarjeta p{
-    font-weight: 1000;
+.subTarjeta p {
+  font-weight: 1000;
 
-    color: #fff;
+  color: #fff;
 }
 
-.subTarjeta svg{
-    width: 12px;
+.subTarjeta svg {
+  width: 12px;
 
-    margin-left: 17px;
+  margin-left: 17px;
 
-    filter: invert();
+  filter: invert();
 }
 
-.superior{
-    display: flex;
-    align-items: center;
+.superior {
+  display: flex;
+  align-items: center;
 }
 
-.superior svg{
-    cursor: pointer;
+.superior svg {
+  cursor: pointer;
 }
 
-.ayuda{
-    position: fixed;
+.ayuda {
+  position: fixed;
 
-    top: 85%;
-    left: 95%;
+  top: 85%;
+  left: 95%;
 
-    z-index: 2;
+  z-index: 2;
 }
 
-.ayuda svg{
-    width: 20px;
-    height: 20px;
+.ayuda svg {
+  width: 20px;
+  height: 20px;
 
-    display: grid;
+  display: grid;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.mas, .pregunta{
-    width: 50px;
-    height: 50px;
+.mas,
+.pregunta {
+  width: 50px;
+  height: 50px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    box-shadow:  7px 7px 53px #ccc,
-                -7px -7px 53px #ffffff;
+  box-shadow: 7px 7px 53px #ccc, -7px -7px 53px #ffffff;
 
-    background-color: #fff;
+  background-color: #fff;
 }
 
-.pregunta{
-    margin-top: 10px;
+.pregunta {
+  margin-top: 10px;
 }
-
 
 /* HOVERS */
 
-.busqueda:hover, input:hover, .logo:hover, .divHoy:hover, .menuLateral:hover, .mas:hover ,.pregunta:hover{
-    background-color: #e2e2e2;
+.busqueda:hover,
+.logo:hover,
+.divHoy:hover,
+.menuLateral:hover,
+.mas:hover,
+.pregunta:hover {
+  background-color: #e2e2e2;
 }
 
-.absolute:hover{
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 1;
+div.busqueda input:hover {
+  background-color: #e2e2e200;
 }
 
-.guardar:hover{
-    background-color: #AD081B;
+.absolute:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
 
+.guardar:hover {
+  background-color: #ad081b;
+}
 
 /* FOCUS */
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
