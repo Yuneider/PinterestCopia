@@ -234,6 +234,10 @@ header {
   top: 78%;
   left: 94%;
   z-index: 2;
+
+  animation-duration: 1s;
+  animation-name: slidein;
+
 }
 
 .ayuda svg {
@@ -291,4 +295,18 @@ div.busqueda input:hover {
 
 input:focus {
   outline: none;
+}
+
+@keyframes slidein {
+  0%{
+    top: 200%  
+  }
+  
+  80%{
+    top: 75%;
+  }
+
+  100%{
+    top: 78%;
+  }
 }
