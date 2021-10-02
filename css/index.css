@@ -126,6 +126,7 @@ ul.cuatro-botones li button {
   margin: 6px;
   outline: currentcolor none medium;
   border-style: none;
+  cursor: pointer;
 }
 
 /*
@@ -218,17 +219,16 @@ div.tarjeta:nth-child(3n) {
   justify-content: center;
   align-items: center;
   border-style: none;
-  transform: translateY(0);
-  transition: 1s linear;
+  cursor: pointer;
 }
 
 .baja {
-  transition: 1s linear;
-  transform: translateY(20px);
+  transition: 1.2s ease-in-out;
+  transform: translateY(22px);
 }
 .sube {
-  transform: translateY(0);
-  transition: 1s linear;
+  transition: 1.2s ease-in-out;
+  transform: translateY(0px);
 }
 
 .boton-flotante svg {
@@ -238,4 +238,20 @@ div.tarjeta:nth-child(3n) {
 .centrado {
   width: 100%;
   margin: 6% auto;
+}
+
+#texto-uno {
+  color: #c28b00;
+}
+
+#texto-dos {
+  color: #0076d3;
+}
+
+#texto-tres {
+  color: #bf4bc1;
+}
+
+#texto-cuatro {
+  color: #407a57;
 }
