@@ -1,3 +1,4 @@
+const ventanaEmergente = document.getElementById("popup-info");
 const botonFlotante = document.getElementById("boton-flotante");
 const textoUno = document.getElementById("texto-uno");
 const textoDos = document.getElementById("texto-dos");
@@ -13,6 +14,9 @@ const imagenTres = document.getElementById("img3");
 const imagenCuatro = document.getElementById("img4");
 const imagenCinco = document.getElementById("img5");
 var estado = 0;
+const botonDefecto = "background: rgb(225, 225, 225) none repeat scroll 0% 0%;";
+
+ventanaEmergente.style.cssText = "display: none";
 
 const SubeyBaja = function () {
   if (botonFlotante.classList.contains("baja")) {
@@ -63,48 +67,47 @@ const CambiarInfo = function () {
     imagenCinco.src = "https://picsum.photos/595/911.jpg";
   }
 
+  textoUno.style.cssText = "display: none";
+  textoDos.style.cssText = "display: none";
+  textoTres.style.cssText = "display: none";
+  textoCuatro.style.cssText = "display: none";
+
+  botonUno.style.cssText = botonDefecto;
+  botonDos.style.cssText = botonDefecto;
+  botonTres.style.cssText = botonDefecto;
+  botonCuatro.style.cssText = botonDefecto;
+
   switch (estado) {
     case 0:
       botonUno.style.cssText = "background-color: #c28b00;";
+      textoUno.style.cssText = "display: block";
       estado = 2;
       break;
 
     case 1:
       botonFlotante.style.cssText = "background-color: #c28b00;";
-      textoCuatro.style.cssText = "display: none";
       textoUno.style.cssText = "display: block";
-      botonCuatro.style.cssText =
-        "background: rgb(225, 225, 225) none repeat scroll 0% 0%;";
       botonUno.style.cssText = "background-color: #c28b00;";
       estado = 2;
       break;
 
     case 2:
       botonFlotante.style.cssText = "background-color: #0076d3;";
-      textoUno.style.cssText = "display: none";
       textoDos.style.cssText = "display: block";
-      botonUno.style.cssText =
-        "background: rgb(225, 225, 225) none repeat scroll 0% 0%;";
       botonDos.style.cssText = "background-color: #0076d3;";
       estado = 3;
       break;
 
     case 3:
       botonFlotante.style.cssText = "background-color: #bf4bc1;";
-      textoDos.style.cssText = "display: none";
       textoTres.style.cssText = "display: block";
-      botonDos.style.cssText =
-        "background: rgb(225, 225, 225) none repeat scroll 0% 0%;";
       botonTres.style.cssText = "background-color: #bf4bc1;";
       estado = 4;
       break;
 
     case 4:
       botonFlotante.style.cssText = "background-color: #407a57;";
-      textoTres.style.cssText = "display: none";
       textoCuatro.style.cssText = "display: block";
-      botonTres.style.cssText =
-        "background: rgb(225, 225, 225) none repeat scroll 0% 0%;";
       botonCuatro.style.cssText = "background-color: #407a57;";
       estado = 1;
       break;
@@ -114,3 +117,15 @@ const CambiarInfo = function () {
 CambiarInfo();
 
 setInterval(CambiarInfo, 7000);
+
+function CambiarEstado(num) {
+  estado = num;
+  CambiarInfo();
+}
+
+function aparecePopup() {
+  ventanaEmergente.style.cssText = "display: block";
+}
+function desaparecePopup() {
+  ventanaEmergente.style.cssText = "display: none";
+}
