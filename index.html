@@ -37,9 +37,17 @@
           </div>
           <h3>Pinterest</h3>
         </div>
-        <div class="etiquetas-menu"><a href="">Info</a></div>
-        <div class="etiquetas-menu"><a href="">Empresa</a></div>
-        <div class="etiquetas-menu"><a href="">Blog</a></div>
+        <div class="etiquetas-menu">
+          <a onclick="aparecePopup()">Info</a>
+        </div>
+        <div class="etiquetas-menu">
+          <a href="https://business.pinterest.com/es/" target="_blank"
+            >Empresa</a
+          >
+        </div>
+        <div class="etiquetas-menu">
+          <a href="https://newsroom.pinterest.com/es" target="_blank">Blog</a>
+        </div>
         <div class="ini-sesion">
           <a href="html/inicio.html">Iniciar sesión</a>
         </div>
@@ -49,24 +57,20 @@
         <div class="descu"><span>Encuentra la próxima</span></div>
         <div class="texto-movil">
           <span id="texto-uno">actividad para niños</span>
-          <span id="texto-dos" style="display: none"
-            >idea de ropa de verano</span
-          >
-          <span id="texto-tres" style="display: none"
-            >idea para una cena especial</span
-          >
-          <span id="texto-cuatro" style="display: none"
-            >proyecto de bricolaje</span
-          >
+          <span id="texto-dos">idea de ropa de verano</span>
+          <span id="texto-tres">idea para una cena especial</span>
+          <span id="texto-cuatro">proyecto de bricolaje</span>
         </div>
         <div class="botones-colores">
           <ul class="cuatro-botones">
+            <li><button id="boton-uno" onclick="CambiarEstado(1)"></button></li>
+            <li><button id="boton-dos" onclick="CambiarEstado(2)"></button></li>
             <li>
-              <button id="boton-uno"></button>
+              <button id="boton-tres" onclick="CambiarEstado(3)"></button>
             </li>
-            <li><button id="boton-dos"></button></li>
-            <li><button id="boton-tres"></button></li>
-            <li><button id="boton-cuatro"></button></li>
+            <li>
+              <button id="boton-cuatro" onclick="CambiarEstado(4)"></button>
+            </li>
           </ul>
         </div>
       </div>
@@ -123,6 +127,26 @@
               ></path>
             </svg>
           </button>
+        </div>
+      </div>
+      <div class="popup" id="popup-info">
+        <div class="cabecera">
+          <h3>Información</h3>
+          <span
+            ><img
+              onclick="desaparecePopup()"
+              class="cerrar"
+              src="files/cerrar.png"
+              alt=""
+          /></span>
+        </div>
+        <div class="cont-info">
+          <span><img class="github" src="files/Github.png" alt="" /></span>
+          <h4>
+            <a href="https://github.com/Yuneider/PinterestCopia" target="blank"
+              >https://github.com/Yuneider/PinterestCopia</a
+            >
+          </h4>
         </div>
       </div>
     </div>
